@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/byteshard/enum/compare/v1.0.1...v1.0.2) (2023-10-09)
+
+
+### Bug Fixes
+
+* use enum for ColumnType ([5f74c24](https://github.com/byteshard/enum/commit/5f74c2469761e691efcbd4538bdc7e4bfd61a493))
+
 ## [1.0.1](https://github.com/byteshard/enum/compare/v1.0.0...v1.0.1) (2023-10-09)
 
 

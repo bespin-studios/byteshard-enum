@@ -6,124 +6,129 @@
 
 namespace byteShard\Enum\DB;
 
-use byteShard\Enum;
-
 /**
  * Class ColumnType
  * @package byteShard\Enum\DB
  */
-final class ColumnType extends Enum\Enum
+enum ColumnType: string
 {
-    const INT = 'int';
-    const INTEGER = 'integer';
-    const BIGINT = 'bigint';
-    const TINYINT = 'tinyint';
-    const SMALLINT = 'smallint';
-    const MEDIUMINT = 'mediumint';
-    const UNSIGNED_BIGINT = 'ubigint';
-    const UNSIGNED_INT = 'uint';
-    const UNSIGNED_INTEGER = 'uint';
-    const UNSIGNED_TINYINT = 'utinyint';
-    const UNSIGNED_SMALLINT = 'usmallint';
-    const UNSIGNED_MEDIUMINT = 'umediumint';
+    case INT = 'int';
+    case INTEGER = 'integer';
+    case BIGINT = 'bigint';
+    case TINYINT = 'tinyint';
+    case SMALLINT = 'smallint';
+    case MEDIUMINT = 'mediumint';
+    case UNSIGNED_BIGINT = 'ubigint';
+    case UNSIGNED_INT = 'uint';
+    case UNSIGNED_INTEGER = 'uinteger';
+    case UNSIGNED_TINYINT = 'utinyint';
+    case UNSIGNED_SMALLINT = 'usmallint';
+    case UNSIGNED_MEDIUMINT = 'umediumint';
 
-    const BSID_INT = 'BSIDInt';
-    const BSID_INT_MATCH = 'BSIDIntMatch';
-    const BSID_VARCHAR = 'BSIDVarchar';
-    const BSID_VARCHAR_MATCH = 'BSIDVarcharMatch';
+    case BSID_INT = 'BSIDInt';
+    case BSID_INT_MATCH = 'BSIDIntMatch';
+    case BSID_VARCHAR = 'BSIDVarchar';
+    case BSID_VARCHAR_MATCH = 'BSIDVarcharMatch';
 
-    const DECIMAL = 'decimal';
-    const REAL = 'real';
-    const DOUBLE = 'double';
-    const FLOAT = 'float';
+    case DECIMAL = 'decimal';
+    case REAL = 'real';
+    case DOUBLE = 'double';
+    case FLOAT = 'float';
 
-    const BIT = 'bool';
-    const BOOL = 'bool';
-    const BOOLEAN = 'bool';
+    case BIT = 'bit';
+    case BOOL = 'bool';
+    case BOOLEAN = 'boolean';
 
-    const CHAR = 'char';
-    const VARCHAR = 'varchar';
-    const CHARACTER_VARYING = 'character varying';
-    const NCHAR = 'nchar';
-    const NVARCHAR = 'nvarchar';
-    const TEXT = 'text';
-    const TINYTEXT = 'tinytext';
-    const MEDIUMTEXT = 'mediumtext';
-    const LONGTEXT = 'longtext';
+    case CHAR = 'char';
+    case VARCHAR = 'varchar';
+    case CHARACTER_VARYING = 'character varying';
+    case NCHAR = 'nchar';
+    case NVARCHAR = 'nvarchar';
+    case TEXT = 'text';
+    case TINYTEXT = 'tinytext';
+    case MEDIUMTEXT = 'mediumtext';
+    case LONGTEXT = 'longtext';
 
-    const BYTEA = 'bytea';
-    const BLOB = 'blob';
-    const TINYBLOB = 'tinyblob';
-    const MEDIUMBLOB = 'mediumblob';
-    const LONGBLOB = 'longblob';
-    const BINARY = 'binary';
-    const VARBINARY = 'varbinary';
+    case BYTEA = 'bytea';
+    case BLOB = 'blob';
+    case TINYBLOB = 'tinyblob';
+    case MEDIUMBLOB = 'mediumblob';
+    case LONGBLOB = 'longblob';
+    case BINARY = 'binary';
+    case VARBINARY = 'varbinary';
 
-    const ENUM = 'enum';
-    const SET = 'set';
+    case ENUM = 'enum';
+    case SET = 'set';
 
-    const DATE = 'date';
-    const SMALLDATETIME = 'smalldatetime';
-    const DATETIME = 'datetime';
-    const DATETIME2 = 'datetime2';
-    const DATETIMEOFFSET = 'datetimeoffset';
-    const BIGINT_DATE = 'bigintDate';
-    const TIME = 'time';
-    const TIMESTAMP = 'timestamp';
-    const YEAR = 'year';
+    case DATE = 'date';
+    case SMALLDATETIME = 'smalldatetime';
+    case DATETIME = 'datetime';
+    case DATETIME2 = 'datetime2';
+    case DATETIMEOFFSET = 'datetimeoffset';
+    case BIGINT_DATE = 'bigintDate';
+    case TIME = 'time';
+    case TIMESTAMP = 'timestamp';
+    case YEAR = 'year';
 
-    const POINT = 'point';
-    const MULTIPOINT = 'multipoint';
-    const LINESTRING = 'linestring';
-    const MULTILINESTRING = 'multilinestring';
-    const POLYGON = 'polygon';
-    const MULTIPOLYGON = 'multipolygon';
-    const GEOMETRY = 'geometry';
-    const GEOMETRYCOLLECTION = 'geometrycollection';
-    const BOX = 'box';
-    const CIRCLE = 'circle';
-    const PATHS = 'paths';
+    case POINT = 'point';
+    case MULTIPOINT = 'multipoint';
+    case LINESTRING = 'linestring';
+    case MULTILINESTRING = 'multilinestring';
+    case POLYGON = 'polygon';
+    case MULTIPOLYGON = 'multipolygon';
+    case GEOMETRY = 'geometry';
+    case GEOMETRYCOLLECTION = 'geometrycollection';
+    case BOX = 'box';
+    case CIRCLE = 'circle';
+    case PATHS = 'paths';
 
-    const MONEY = 'money';  //  stores a currency amount with a fixed fractional precision
+    case MONEY = 'money';  //  stores a currency amount with a fixed fractional precision
     // Network address Types
-    const CIDR = 'cidr';
-    const INET = 'inet';
-    const MACADDR = 'macaddr';
+    case CIDR = 'cidr';
+    case INET = 'inet';
+    case MACADDR = 'macaddr';
     // text search types
-    const TSVECTOR = 'tsvector';
-    const TSQUERY = 'tsquery';
+    case TSVECTOR = 'tsvector';
+    case TSQUERY = 'tsquery';
 
-    const UUID = 'uuid'; // uuid stores Universally Unique Identifiers
+    case UUID = 'uuid'; // uuid stores Universally Unique Identifiers
 
-    public static function is_numeric(string $nameOrValue): bool
+    public static function is_numeric(ColumnType $columnType): bool
     {
-        switch ($nameOrValue) {
-            case self::INT:
-            case self::INTEGER:
-            case self::BIGINT:
-            case self::TINYINT:
-            case self::SMALLINT:
-            case self::MEDIUMINT:
-            case self::UNSIGNED_BIGINT:
-            case self::UNSIGNED_INT:
-            case self::UNSIGNED_INTEGER:
-            case self::UNSIGNED_TINYINT:
-            case self::UNSIGNED_SMALLINT:
-            case self::UNSIGNED_MEDIUMINT:
-            case self::REAL:
-            case self::DOUBLE:
-            case self::FLOAT:
-            case self::BSID_INT:
-            case self::BSID_INT_MATCH:
-            case self::MONEY:
-                return true;
-            default:
-                return false;
-        }
+        return match ($columnType) {
+            self::INT,
+            self::INTEGER,
+            self::BIGINT,
+            self::TINYINT,
+            self::SMALLINT,
+            self::MEDIUMINT,
+            self::UNSIGNED_BIGINT,
+            self::UNSIGNED_INT,
+            self::UNSIGNED_INTEGER,
+            self::UNSIGNED_TINYINT,
+            self::UNSIGNED_SMALLINT,
+            self::UNSIGNED_MEDIUMINT,
+            self::REAL,
+            self::DOUBLE,
+            self::FLOAT,
+            self::BSID_INT,
+            self::BSID_INT_MATCH,
+            self::MONEY => true,
+            default     => false,
+        };
     }
 
-    public static function is_string(string $nameOrValue): bool
+    public static function is_string(ColumnType $nameOrValue): bool
     {
         return !self::is_numeric($nameOrValue);
+    }
+
+    public function value(): string
+    {
+        return match ($this) {
+            self::BIT, self::BOOLEAN => 'bool',
+            self::UNSIGNED_INTEGER   => 'uint',
+            default                  => $this->value
+        };
     }
 }

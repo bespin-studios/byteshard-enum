@@ -93,6 +93,36 @@ enum ColumnType: string
 
     case UUID = 'uuid'; // uuid stores Universally Unique Identifiers
 
+    public function isNumeric(): bool
+    {
+        return match ($this) {
+            self::INT,
+            self::INTEGER,
+            self::BIGINT,
+            self::TINYINT,
+            self::SMALLINT,
+            self::MEDIUMINT,
+            self::UNSIGNED_BIGINT,
+            self::UNSIGNED_INT,
+            self::UNSIGNED_INTEGER,
+            self::UNSIGNED_TINYINT,
+            self::UNSIGNED_SMALLINT,
+            self::UNSIGNED_MEDIUMINT,
+            self::REAL,
+            self::DOUBLE,
+            self::FLOAT,
+            self::BSID_INT,
+            self::BSID_INT_MATCH,
+            self::MONEY => true,
+            default     => false,
+        };
+    }
+
+    public function isString(): bool
+    {
+        return !$this->isNumeric();
+    }
+
     public static function is_numeric(ColumnType $columnType): bool
     {
         return match ($columnType) {

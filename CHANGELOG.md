@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/bespin-studios/byteshard-enum/compare/v1.1.0...v1.1.1) (2025-05-27)
+
+
+### Bug Fixes
+
+* pipeline ([bdafb26](https://github.com/bespin-studios/byteshard-enum/commit/bdafb26e7196ee9a6e281337b2e3c7a252709c43))
+
 # [1.1.0](https://github.com/byteshard/enum/compare/v1.0.2...v1.1.0) (2023-10-10)
 
 

@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/bespin-studios/byteshard-enum/compare/v1.1.1...v1.2.0) (2025-05-27)
+
+
+### Features
+
+* add enum for http response state ([a8d7e21](https://github.com/bespin-studios/byteshard-enum/commit/a8d7e2162e2f7b5df47da35060235216b8ac9522))
+
 ## [1.1.1](https://github.com/bespin-studios/byteshard-enum/compare/v1.1.0...v1.1.1) (2025-05-27)
 
 

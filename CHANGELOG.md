@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/bespin-studios/byteshard-enum/compare/v1.3.0...v1.4.0) (2025-07-11)
+
+
+### Features
+
+* add additional content types ([8c75531](https://github.com/bespin-studios/byteshard-enum/commit/8c75531429fe26f9a85b673e30c283448c0aad84))
+
 # [1.3.0](https://github.com/bespin-studios/byteshard-enum/compare/v1.2.0...v1.3.0) (2025-07-09)
 
 

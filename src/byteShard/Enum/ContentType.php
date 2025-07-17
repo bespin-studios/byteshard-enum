@@ -20,4 +20,5 @@ enum ContentType: string
     case DhtmlxToolbar = 'DHTMLXToolbar';
     case DhtmlxTree = 'DHTMLXTree';
     case DhtmlxTreeGrid = 'DHTMLXTreegrid';
+    case HTML = 'HTML';
 }

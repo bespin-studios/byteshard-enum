@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/bespin-studios/byteshard-enum/compare/v1.4.0...v1.5.0) (2025-07-17)
+
+
+### Features
+
+* add HTML as a valid content type ([c2a5281](https://github.com/bespin-studios/byteshard-enum/commit/c2a528141a72c30f0000c6ee21e255b9c49d9acd))
+
 # [1.4.0](https://github.com/bespin-studios/byteshard-enum/compare/v1.3.0...v1.4.0) (2025-07-11)
 
 

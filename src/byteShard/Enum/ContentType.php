@@ -16,6 +16,7 @@ enum ContentType: string
     case DhtmlxList = 'DHTMLXList';
     case DhtmlxMenu = 'DHTMLXMenu';
     case DhtmlxPopup = 'DHTMLXPopup';
+    case DhtmlxRibbon = 'DHTMLXRibbon';
     case DhtmlxScheduler = 'DHTMLXScheduler';
     case DhtmlxSideBar = 'DHTMLXSideBar';
     case DhtmlxSideBarCell = 'DHTMLXSideBarCell';

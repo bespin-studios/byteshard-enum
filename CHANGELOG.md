@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/bespin-studios/byteshard-enum/compare/v1.7.0...v1.8.0) (2025-09-30)
+
+
+### Features
+
+* add event enum ([399c2b4](https://github.com/bespin-studios/byteshard-enum/commit/399c2b4157234e187fff796dfc8da8c68915e6b7))
+
 # [1.7.0](https://github.com/bespin-studios/byteshard-enum/compare/v1.6.0...v1.7.0) (2025-09-25)
 
 

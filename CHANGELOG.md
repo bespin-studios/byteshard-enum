@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/bespin-studios/byteshard-enum/compare/v1.8.0...v1.8.1) (2025-10-13)
+
+
+### Bug Fixes
+
+* add LogFormat enum ([a040f62](https://github.com/bespin-studios/byteshard-enum/commit/a040f62d6e722b3a09f699d3cc84a370302b01cb))
+
 # [1.8.0](https://github.com/bespin-studios/byteshard-enum/compare/v1.7.0...v1.8.0) (2025-09-30)
 
 

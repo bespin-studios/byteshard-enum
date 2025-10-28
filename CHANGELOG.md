@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/bespin-studios/byteshard-enum/compare/v1.8.1...v1.9.0) (2025-10-28)
+
+
+### Features
+
+* add no app permission type ([f5ba186](https://github.com/bespin-studios/byteshard-enum/commit/f5ba186336d5a466d3a523c178f376f96e2629cc))
+
 ## [1.8.1](https://github.com/bespin-studios/byteshard-enum/compare/v1.8.0...v1.8.1) (2025-10-13)
 
 

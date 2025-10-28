@@ -26,4 +26,5 @@ enum ContentType: string
     case DhtmlxTree = 'DHTMLXTree';
     case DhtmlxTreeGrid = 'DHTMLXTreegrid';
     case HTML = 'HTML';
+    case NoAppPermissions = 'NoAppPermissions';
 }

@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/bespin-studios/byteshard-enum/compare/v1.9.0...v1.9.1) (2026-07-22)
+
+
+### Bug Fixes
+
+* add IndexType enum for database ([9011f87](https://github.com/bespin-studios/byteshard-enum/commit/9011f87819ce8b5a365b5034c4b8bdb0776bf331))
+
 # [1.9.0](https://github.com/bespin-studios/byteshard-enum/compare/v1.8.1...v1.9.0) (2025-10-28)
 
 
